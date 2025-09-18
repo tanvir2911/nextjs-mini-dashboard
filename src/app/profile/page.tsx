@@ -4,10 +4,7 @@ import { useSession, signOut } from 'next-auth/react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, User, Mail, Calendar, LogOut } from 'lucide-react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
 import Image from 'next/image';
-import { auth } from '@/lib/auth';
 
 export default function ProfilePage() {
   const { data: session, status } = useSession();
