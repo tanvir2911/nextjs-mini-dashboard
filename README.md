@@ -66,8 +66,8 @@ This project is ready for deployment on Vercel, Netlify, or any other hosting pl
 
 ## Live Demo
 
-[View Live Demo]()
+[View Live Demo](https://nextjs-mini-dashboard.vercel.app)
 
 ## GitHub Repository
 
-[View Source Code]()
+[View Source Code](https://github.com/tanvir2911/nextjs-mini-dashboard)
