@@ -10,6 +10,7 @@ A modern, responsive dashboard built with Next.js 15, TypeScript, Tailwind CSS, 
 - **Error Handling**: Comprehensive error states with retry functionality
 - **Loading States**: Smooth loading spinners throughout the app
 - **Animations**: Framer Motion animations for enhanced user experience
+- **Authentication**: NextAuth for basic authentication 
 
 ## Tech Stack
 
