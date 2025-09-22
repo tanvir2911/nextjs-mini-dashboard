@@ -47,7 +47,7 @@ export default function Sidebar() {
       </motion.button>
 
       <AnimatePresence>
-        {(isMobileOpen || !isCollapsed) && (
+        {isMobileOpen && (
           <motion.div
             className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
             initial={{ opacity: 0 }}
@@ -59,7 +59,9 @@ export default function Sidebar() {
       </AnimatePresence>
 
       <motion.aside
-        className="fixed left-0 top-0 h-full bg-white shadow-xl z-50 lg:z-40 border-r border-gray-200"
+        className={`fixed left-0 top-0 h-full bg-white shadow-xl z-50 lg:z-40 border-r border-gray-200 ${
+          isMobileOpen ? 'block' : 'hidden lg:block'
+        }`}
         variants={sidebarVariants}
         animate={isCollapsed ? 'collapsed' : 'expanded'}
         transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}

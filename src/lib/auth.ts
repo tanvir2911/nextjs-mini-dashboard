@@ -1,9 +1,6 @@
 import NextAuth from 'next-auth';
 import Google from 'next-auth/providers/google';
 
-console.log("GOOGLE_CLIENT_ID:", process.env.GOOGLE_CLIENT_ID ? "SET" : "MISSING");
-console.log("GOOGLE_CLIENT_SECRET:", process.env.GOOGLE_CLIENT_SECRET ? "SET" : "MISSING");
-
 export const { handlers, auth, signIn, signOut } = NextAuth({
   secret: process.env.NEXTAUTH_SECRET || 'fallback-secret-for-development',
   providers: [
