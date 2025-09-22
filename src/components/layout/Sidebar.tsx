@@ -64,7 +64,11 @@ export default function Sidebar() {
         }`}
         variants={sidebarVariants}
         animate={isCollapsed ? 'collapsed' : 'expanded'}
-        transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+        transition={{ 
+          duration: isCollapsed ? 0.3 : 0.15, 
+          delay: isCollapsed ? 0.05 : 0,
+          ease: [0.25, 0.46, 0.45, 0.94] 
+        }}
         initial={false}
         style={{ 
           backgroundColor: 'white',
@@ -167,7 +171,6 @@ export default function Sidebar() {
           </nav>
 
           <div className="p-4 border-t border-gray-200 space-y-2">
-            {/* Always show auth buttons for testing */}
             <div className="text-xs text-gray-500 mb-2">
               Auth Status: {session ? 'Logged in' : 'Not logged in'}
             </div>

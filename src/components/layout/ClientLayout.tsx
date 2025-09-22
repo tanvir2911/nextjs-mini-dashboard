@@ -14,7 +14,7 @@ function MainContent({ children }: { children: ReactNode }) {
   return (
     <main 
       className={`min-h-screen transition-all duration-300 ease-in-out bg-gray-50 ${
-        isCollapsed ? 'lg:ml-20' : 'lg:ml-80'
+        isCollapsed ? 'lg:ml-20' : 'lg:ml-70'
       }`}
       style={{ 
         backgroundColor: '#f9fafb',
